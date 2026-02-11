@@ -8,9 +8,9 @@ git clone https://github.com/gamerbhai96/devops-test-.git app || (cd app && git 
 
 # Build and run the Docker container
 cd app
-docker build -t my-app .
-docker stop my-app-container || true
-docker rm my-app-container || true
-docker run -d --name my-app-container -p 80:80 my-app
+sudo docker build -t my-app .
+sudo docker stop my-app-container || true
+sudo docker rm my-app-container || true
+sudo docker run -d --name my-app-container -p 80:80 my-app
 
 echo "Deployment completed successfully!"
